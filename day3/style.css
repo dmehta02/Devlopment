@@ -1,0 +1,8 @@
+td{
+    background-color: lab(67.48% 60.32 -27.45 / 0.63);
+    border: 3px solid black;
+}
+caption{
+    font-style: oblique;
+    color: aquamarine;
+}
