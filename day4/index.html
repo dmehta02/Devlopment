@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video and Audio Site</title>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HTeP7ja9UFY?si=Kp34z0QyjNHuhLrP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   <span style="font-size: 25px; position: relative; bottom: 150px;">-- Maand || Broly vs Goku --</span>
-
-    <video src="videoplayback.mp4" controls width="560" ></video>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video and Audio Site</title>
+  <style>
+    .title-text {
+      font-size: 25px;
+      position: relative;
+      bottom: 20px;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      color: #ab2b2b;
+    }
+    .video-container {
+      display: flexbox;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
+
+  <div class="video-container">
+    <iframe width="560" height="315" 
+      src="https://www.youtube.com/embed/HTeP7ja9UFY?si=Kp34z0QyjNHuhLrP"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <video src="videoplayback.mp4" controls width="560"></video>
+  </div>
+<br>
+  <span class="title-text">&nbsp;&nbsp;&nbsp;&nbsp; Maand &nbsp;&nbsp; || &nbsp;&nbsp;&nbsp;&nbsp;Broly vs Goku &nbsp;&nbsp;&nbsp;</span>
+
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+
 </body>
 </html>
