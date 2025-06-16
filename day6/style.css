@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #222;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* About */
+.about, .collections, .cta, .contact {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.about h2, .collections h2, .cta h2, .contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Collection Cards */
+.collection-card {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #333;
+}
+
+/* Call to Action */
+.cta {
+  text-align: center;
+  background-color: #ffe4c4;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Footer / Contact */
+.contact {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  font-size: 1rem;
+}
