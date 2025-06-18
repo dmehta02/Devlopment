@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        nav{
+            background-color: rgb(120, 162, 64);
+           text-align: center;
+           font-size: larger;
+           position: sticky;
+           top: 0;
+           height: 50px; ;
+        }
+ul li{
+    list-style: none;
+    display: inline;
+    color: azure;
+    padding:  10px 20px 0px;
+    margin:  10px 20px 0;
+}
+div.pbox{
+    display: flex;
+    padding: 10px 100px;
+    background-color: rgb(235, 245, 103);
+    
+}
+.boxl{
+    background-color: aliceblue;
+    color: red;
+    border: 2px double rgb(159, 28, 50);
+    width: 30vw;
+    display: flex;
+    border-radius: 10px;
+    height: 700vh;
+    margin-bottom: 30px;
+}
+.img img{
+    width: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 0px;
+    border-radius: 100%;
+    border: solid;
+    
+}
+
+.boxr{
+    background-color: aliceblue;
+    border: 2px double rgb(159, 28, 50);
+    width: 30vw;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contacts</li>
+                <li>Links</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="pbox">
+        
+        <div class="boxl"></div>
+        <div class="boxr"></div>
+    </div>
+    <div class="img"><img src="fbdf.jpg" alt=""></div>
+    <footer class="end">This is the footer</footer>
+    </body>
+</html>
