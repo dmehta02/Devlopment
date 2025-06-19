@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Bounce Effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cont{ display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Align to bottom */ 
+         
+            height: 80vh;
+            width: 1500px;
+            background-color: #000;
+        }
+        .wrapper{
+            animation: bounce2 700ms ease-out infinite alternate;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            position: relative;
+            /* filter: drop-shadow(-10px 16px 10px rgb(221, 172, 172)); */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: bounce 4s linear infinite alternate;
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{transform: translateX(1400px);}
+           }
+         @keyframes bounce2{
+            0%{
+                transform: translateY(0px);
+            }
+            100%{transform: translateY(-500px);}
+           }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="wrapper">
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+</html>
