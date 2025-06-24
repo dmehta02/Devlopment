@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>textContent vs innerHTML</title>
+  <style>
+    .box {
+      border: 1px solid black;
+      padding: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+    }
+    button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Demo: textContent vs innerHTML</h2>
+
+  <div class="box" id="textBox">This will be updated using <code>textContent</code></div>
+  <div class="box" id="htmlBox">This will be updated using <code>innerHTML</code></div>
+
+  <button onclick="useTextContent()">Use textContent</button>
+  <button onclick="useInnerHTML()">Use innerHTML</button>
+
+  <script>
+    function useTextContent() {
+      const textBox = document.getElementById("textBox");
+      textBox.textContent = "<b>Hello, World!</b>"; // Text only
+
+    //   const htmlBox = document.getElementById("htmlBox");
+    //   htmlBox.textContent = "<b>Hello, World!</b>"; // Still text only
+    }
+
+    function useInnerHTML() {
+    //   const textBox = document.getElementById("textBox");
+    //   textBox.innerHTML = "<b>Hello, World!</b>"; // Now bolded
+
+      const htmlBox = document.getElementById("htmlBox");
+      htmlBox.innerHTML = "<b>Hello, World!</b>"; // Bolded too
+    }
+  </script>
+
+</body>
+</html>
